@@ -20,3 +20,4 @@ function parse(string $url): array {
 function from_params(array $params): string {
     return $params["scheme"] . ":host=" . $params["host"] . ";port=" . $params["port"] . ";dbname=" . $params["database"];
 }
+?>
