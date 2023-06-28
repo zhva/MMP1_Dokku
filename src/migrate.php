@@ -1,9 +1,6 @@
 <?php
 
-$host = 'database';
-$db = 'hsdeckbuilder_db';
-$user = 'postgres';
-$password = 'postgres';
+include 'db_functions.php';
 
 $statements = [
     'CREATE TABLE IF NOT EXISTS visits (
@@ -14,7 +11,8 @@ $statements = [
 try {
     $dsn = "pgsql:host=$host;port=5432;dbname=$db;";
     // make a database connection
-    $pdo = new PDO($dsn, $user, $password, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+    // $pdo = new PDO($dsn, $user, $password, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+    $pdo = new PDO($dsn, $params['user'], $params['password'], [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 
     if ($pdo) {
         foreach ($statements as $statement) {
