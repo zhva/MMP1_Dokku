@@ -12,7 +12,7 @@
 
 // Design & Development: Viktoria Zhuravel
 
-include "config.php";
+include 'db_functions.php';
     if(!isset($_COOKIE['token']))
     {
         $oathUrl = 'https://us.battle.net/oauth/token';
