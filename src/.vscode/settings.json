@@ -1,0 +1,24 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "hsdeckbuilder_local",
+            "database": "hsdeckbuilder",
+            "username": "postgres",
+            "password": "postgres"
+        },
+        {
+            "previewLimit": 50,
+            "server": "users.multimediatechnology.at",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "mmp1_deckbuilder",
+            "database": "fhs47778_mmp1",
+            "username": "fhs47778",
+            "password": "8P+SvFj0qdD7"
+        }
+    ]
+}
