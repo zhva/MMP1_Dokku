@@ -77,7 +77,7 @@
         }
     }
 
-    require "config.php";
+    require "db_functions.php";
 
     if ( ! $DB_NAME ) die ('Please create config.php, define $DB_NAME, $DSN, $DB_USER, $DB_PASS there. See config_sample.php');
 
