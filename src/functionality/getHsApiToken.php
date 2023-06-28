@@ -12,8 +12,12 @@
 
 // Design & Development: Viktoria Zhuravel
 
-include "config.php";
 include 'db_functions.php';
+
+
+$clientId = "6eb49842bf6248c9831cc8343bb1fdd5";
+$clientSecret = "S6iqxaH5w9I8QfFxZUdt6ZMJn2Wix5yz";
+
     if(!isset($_COOKIE['token']))
     {
         $oathUrl = 'https://us.battle.net/oauth/token';
